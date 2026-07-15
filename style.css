@@ -1,0 +1,33 @@
+
+*{margin:0;padding:0;box-sizing:border-box;font-family:'Poppins',sans-serif;scroll-behavior:smooth}
+body{background:#050816;color:#fff}
+#loader{position:fixed;inset:0;background:#050816;display:flex;justify-content:center;align-items:center;z-index:9999}
+.loader-content{text-align:center}
+.loader-content h1{font-size:52px;color:#00bfff;animation:pulse 1.5s infinite}
+@keyframes pulse{50%{transform:scale(1.08)}}
+header{position:fixed;top:0;width:100%;padding:18px 8%;background:#0b1120;z-index:999}
+nav{display:flex;justify-content:space-between;align-items:center}
+nav h2{color:#00bfff}
+nav ul{display:flex;gap:20px;list-style:none}
+nav a{text-decoration:none;color:#fff}
+.hero{height:100vh;display:flex;justify-content:center;align-items:center;text-align:center;position:relative;background:linear-gradient(135deg,#050816,#0b1120,#111827)}
+.hero-content{z-index:2;max-width:800px}
+.hero h1{font-size:56px}
+.hero p{margin:20px 0;font-size:22px}
+.btn{display:inline-block;background:#00bfff;color:#fff;padding:14px 30px;border-radius:30px;text-decoration:none}
+section{padding:100px 8%}
+h2{text-align:center;color:#00bfff;margin-bottom:30px}
+.cards{display:grid;grid-template-columns:repeat(auto-fit,minmax(240px,1fr));gap:20px}
+.card{background:rgba(255,255,255,.05);backdrop-filter:blur(12px);padding:25px;border-radius:16px;border:1px solid rgba(255,255,255,.1);transition:.3s}
+.card:hover{transform:translateY(-8px)}
+.contact-form{max-width:700px;margin:auto;display:flex;flex-direction:column;gap:15px}
+.contact-form input,.contact-form textarea{padding:15px;background:#111827;color:#fff;border:1px solid #2a3650;border-radius:10px}
+.contact-form button{cursor:pointer}
+#particles{position:absolute;inset:0;pointer-events:none}
+.particle{position:absolute;width:6px;height:6px;background:#00bfff;border-radius:50%;animation:float 10s linear infinite}
+@keyframes float{from{transform:translateY(100vh)}to{transform:translateY(-120vh)}}
+@media(max-width:768px){
+nav{flex-direction:column}
+nav ul{flex-wrap:wrap;justify-content:center}
+.hero h1{font-size:38px}
+}
